@@ -10,14 +10,26 @@ The dataset `churn_data.csv` contains information about customers, including:
 -   **Target**: Churn (Yes/No)
 
 ## Visualizations
-The project includes a `visualize_churn.py` script that generates the following visualizations:
 
-1.  **Overall Churn Distribution**: A pie chart showing the percentage of customers who churned vs. those who stayed.
-2.  **Churn by Contract Type**: A bar chart comparing churn rates across Month-to-month, One year, and Two year contracts.
-3.  **Churn by Payment Method**: A bar chart showing churn counts for different payment methods (Electronic check, Mailed check, Bank transfer, Credit card).
-4.  **Distribution of Monthly Charges**: A KDE plot comparing the monthly charges for churned vs. retained customers.
+Here are the key insights generated from the analysis:
 
-## How to Run
+### 1. Overall Churn Distribution
+![Churn Distribution](visualizations/churn_distribution.png)
+*A pie chart showing the percentage of customers who churned vs. those who stayed.*
+
+### 2. Churn by Contract Type
+![Churn by Contract](visualizations/churn_by_contract.png)
+*Customers with month-to-month contracts tend to have a higher churn rate compared to those with one or two-year contracts.*
+
+### 3. Churn by Payment Method
+![Churn by Payment Method](visualizations/churn_by_payment_method.png)
+*Electronic check users often show higher churn rates.*
+
+### 4. Distribution of Monthly Charges
+![Monthly Charges Distribution](visualizations/monthly_charges_distribution.png)
+*Higher monthly charges may correlate with higher churn, as seen in the density plot.*
+
+## How to Run locally
 
 1.  **Clone the repository**:
     ```bash
@@ -36,11 +48,6 @@ The project includes a `visualize_churn.py` script that generates the following 
     python visualize_churn.py
     ```
     This will generate the visualization images in the `visualizations` folder.
-
-## Key Insights (Expected)
--   **Contract Type**: Customers with month-to-month contracts tend to have a higher churn rate compared to those with one or two-year contracts.
--   **Payment Method**: Electronic check users often show higher churn rates.
--   **Monthly Charges**: Higher monthly charges may correlate with higher churn, but this depends on the service value perception.
 
 ## Files
 -   `churn_data.csv`: The raw dataset.
